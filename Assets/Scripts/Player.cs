@@ -10,6 +10,12 @@ public class Player : MonoBehaviour
 
     public Platform CurrentPlatform;
 
+    private void Start()
+    {
+        ParticleSystem particleSystem = gameObject.GetComponent<ParticleSystem>();
+        particleSystem.Stop();
+    }
+
     public void ReachFinish()
     {
         Game.OnPlayerReachedFinish();
@@ -23,6 +29,8 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
+        ParticleSystem particleSystem = gameObject.GetComponent<ParticleSystem>();
+        particleSystem.Play();
         Game.OnPlayerDied();
         Rigidbody.velocity = Vector3.zero;
     }

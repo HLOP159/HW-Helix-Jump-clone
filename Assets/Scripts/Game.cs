@@ -1,11 +1,15 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
     public Controls Controls;
+    public float InvokeTime = 0;
 
+    private void Start()
+    {
+        gameObject.GetComponent<AudioSource>().enabled = true; // включает компонент аудиосорс, с главной музыкой
+    }
 
     public enum State
     {
@@ -22,7 +26,8 @@ public class Game : MonoBehaviour
         CurrentState = State.Lose;
         Controls.enabled = false;
         Debug.Log("game over");
-        ReloadLevel();
+        gameObject.GetComponent<AudioSource>().enabled = false; // отключение компонента аудиосорс, что выелючает музыку
+        Invoke("ReloadLevel", InvokeTime);
     }
 
     public void OnPlayerReachedFinish()
@@ -33,7 +38,8 @@ public class Game : MonoBehaviour
         Controls.enabled = false;
         LevelIndex++;
         Debug.Log("You won!");
-        ReloadLevel();
+        gameObject.GetComponent<AudioSource>().enabled = false; // отключение компонента аудиосорс, что выелючает музыку
+        Invoke("ReloadLevel", InvokeTime);
     }
 
     public int LevelIndex
