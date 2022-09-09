@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 67
+  controlID: 166
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 68
+  controlID: 167
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 69
+  controlID: 168
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 123
+  controlID: 98
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1394,7 +1394,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 34fbfffff4ffffff506c0000766c0000
+      m_ExpandedIDs: 32fbffff34fbfffff26b00000a6c0000766c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1643,9 +1643,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.5310097, y: -29.12194, z: -36.987873}
+    m_Target: {x: -19.794455, y: -23.760597, z: -31.773254}
     speed: 2
-    m_Value: {x: -5.5310097, y: -29.12194, z: -36.987873}
+    m_Value: {x: -19.794455, y: -23.760597, z: -31.773254}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1692,13 +1692,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.024685163, y: 0.9535395, z: -0.28902984, w: -0.0814379}
+    m_Target: {x: -0.06192794, y: 0.9361354, z: -0.21160966, w: -0.27395904}
     speed: 2
-    m_Value: {x: -0.02468495, y: 0.9535313, z: -0.28902736, w: -0.0814372}
+    m_Value: {x: -0.061927423, y: 0.9361276, z: -0.21160789, w: -0.27395675}
   m_Size:
-    m_Target: 30.04588
+    m_Target: 30.334412
     speed: 2
-    m_Value: 30.04588
+    m_Value: 30.334412
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2983,21 +2983,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/URP
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/URP
+  - Assets
   m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\Progs(D)\GitHubRepository\HW-Helix-Jump-clone
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 767d0000
-    m_LastClickedID: 32118
+    m_SelectedIDs: 867b0000
+    m_LastClickedID: 31622
     m_ExpandedIDs: 00000000867b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -3173,7 +3173,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 1782
+  m_LastVerticalScrollValue: 864
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
