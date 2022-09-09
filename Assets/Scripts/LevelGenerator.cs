@@ -12,6 +12,7 @@ public class LevelGenerator : MonoBehaviour
     public Transform CylinderRoot;
     public float ExtraCylinderScale = 1f;
     public Game Game;
+    public GameObject ObjectParticleSystem;
 
     private void Awake()
     {
@@ -24,6 +25,8 @@ public class LevelGenerator : MonoBehaviour
         {
             int prefabIndex = RandomRange(random, 0, PlatformsPrefabs.Length);
             GameObject platformPrefab = i == 0 ? FirstPlatformPrefab : PlatformsPrefabs[prefabIndex];
+            GameObject particleSystem = Instantiate(ObjectParticleSystem, transform);
+            particleSystem.transform.localPosition = CalculatePlatformPosition(i);
             GameObject platform = Instantiate(platformPrefab, transform);
             platform.transform.localPosition = CalculatePlatformPosition(i);
             if (i > 0)
